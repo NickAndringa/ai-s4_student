@@ -15,6 +15,10 @@
 #   Silicon/arm64). Die build is gelinkt tegen NumPy 1.x, dus numpy moet <2
 #   blijven — met numpy 2.x geeft "import torch" een NumPy-compatibiliteits-
 #   waarschuwing/crash. numpy<2 is ook veiliger voor gensim (zie hieronder).
+#
+# Let op 4: torchvision moet exact bij de torch-versie passen (0.17.2 hoort
+#   bij torch 2.2.2) — een niet-matchende versie geeft import- of
+#   runtime-fouten.
 
 datasets==4.4.2
 graphviz==0.21
@@ -38,3 +42,4 @@ pillow==11.3.0
 gensim==4.4.0
 torchinfo==1.8.0
 torch==2.2.2
+torchvision==0.17.2
